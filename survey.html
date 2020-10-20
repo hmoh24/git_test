@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<style>
+
+            
+#contents { background-image: linear-gradient( #69CD84, #69CDB6); }
+
+h1 {background-color: #42C065;
+	font-family: monospace;
+    font-size: 40px; }
+
+#description {
+	border: 2px solid cyan;
+    background-color: #CDB669;
+    font-family: monospace;
+} 
+#textarea {
+    width: 550px;
+    padding: 20px;
+
+}
+
+h2 {
+    padding:;
+}
+
+
+</style>
+
+
+<html>
+    <head><meta charset="UTF-8"></head>
+	<body>
+    <!-- Title and Description -->
+    
+    	<h1 id="Title"> Environmental Awareness Survey </h1>
+        	<p id="description"> A short survey to asses the level of concern for the environment by citizens of London in 2020 during the Covid-19 pandemic.</p>
+            
+           
+    <!-- Details form -->
+    <form>
+        <hr><div id="contents">
+       	<h2> Details</h2>
+        
+        <div class="container1">
+        	
+            <label>Name: <input id="name" autocomplete="name" placeholder="Enter your name" required></label><br>
+        	<label>Email: <input id="email" type="email" placeholder="Enter your email" required> </label><br>
+        	<label>Phone number: <input id="number" type="tel" autocomplete="tel" placeholder="Enter your telephone number" required minlength="11" maxlength="11"></label>
+        	
+        </div>
+        
+   	<!-- Questions + inputs-->
+        
+        	<h2> How concerned are you about the general environment?</h2>
+        		
+                <label><input name="general" type="radio" class="radio" required> Very concerned </label><br>
+                <label><input name="general" type="radio" class="radio"> Slightly concerned </label><br>
+                <label><input name="general" type="radio" class="radio"> Not sure </label><br>
+                <label><input name="general" type="radio" class="radio"> Not very concerned </label><br>
+                <label><input name="general" type="radio" class="radio"> Not concerned at all</label><br>
+                
+        
+     
+     		<h2> How well do you think the UK government is implementing and handling environmental policies? </h2>
+            	
+                <label><input name="policy" type="radio" class="radio" required> Great </label><br>
+                <label><input name="policy" type="radio" class="radio">  Good </label><br>
+                <label><input name="policy" type="radio" class="radio"> Not sure/OK </label><br>
+                <label><input name="policy" type="radio" class="radio"> Not good </label><br>
+                <label><input name="policy" type="radio" class="radio"> Horrible <label><br>
+               
+                
+            <h2> What area(s) of environmental issues do you think the U.K. government handles poorly?</h2>
+                
+                <label><input name="badissue" type="checkbox" class="checkbox"> Air pollution </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox"> Water pollution </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox"> Waste management </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox"> Recycling and re-use </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox"> Ground pollution <label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox"> Ground/soil contamination </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox"> Deforestation </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox"> Radioactive waste </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox"> Habitat and wildlife protection <label><br>
+                
+            
+            <h2> What area(s) of environmental issues do you think the U.K. government handles well?</h2>
+                
+                <label><input name="goodissue" type="checkbox" class="checkbox"> Air pollution </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox"> Water pollution </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox"> Waste management </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox"> Recycling and re-use </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox"> Ground pollution <label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox"> Ground/soil contamination </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox"> Deforestation </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox"> Radioactive waste </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox"> Habitat and wildlife protection <label><br>
+                
+
+            <h2> What income bracket are you?</h2>
+                <label for="dropdown"> Please select a value: </label>
+                <select name="income" id="dropdown" required>
+                        <option value="250k+"> £250K+ </option>
+                        <option value="100k-250k"> £100k-£250k</option>
+                        <option value="75k-100k"> £75k-£100k</option>
+                        <option value="50k-75k"> £50k-£75k</option>
+                        <option value="25k-50k"> £25k-£50k</option>
+                        <option value="0-25k"> 0-£25k</option><br>
+               </select>
+                        
+            <h2> How likely is it that you would alter your lifestyle in order to decrease your environmental footprint, even if it results in a non trivial increase in expenses? </h2> 
+                    <label><input name="lifestyle" type="radio" class="radio" required> Very likely </label><br>
+                    <label><input name="lifestyle" type="radio" class="radio">  Likely </label><br>
+                    <label><input name="lifestyle" type="radio" class="radio"> Not sure </label><br>
+                    <label><input name="lifestyle" type="radio" class="radio"> Not likely </label><br>
+                    <label><input name="lifestyle" type="radio" class="radio"> Not at all</label><br>
+                    
+
+            <h2> How much do you think that the U.K. government should increase their budget for environmental issues , even if it results in a non trivial increase in your personal expenses? </h2>
+                <label><input name="govbudget" type="radio" class="radio" required> By a large amount </label><br>
+                <label><input name="govbudget" type="radio" class="radio"> By a small amount </label><br>
+                <label><input name="govbudget" type="radio" class="radio"> Not sure/no change </label><br>
+                <label><input name="govbudget" type="radio" class="radio"> Decrease by a small amount </label><br>
+                <label><input name="govbudget" type="radio" class="radio"> Decrease by a lot</label><br>
+            <h2> Please leave a short comment about any other concerns you would like to raise regarding the approach of the British people and their governments' approach to environmental issues</h2>
+                <label for="textarea"> Please write here:</label>
+                <textarea id="textarea" name="textarea" maxlength="300" ></textarea><br>
+        <input name="all" type="submit" class="submit">
+        
+    </form>            
+                
+
+
+
+
+
+    <div>
+    </body>
+
+<html>
