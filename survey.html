@@ -101,56 +101,55 @@ h2 {
 
         	<h2> How concerned are you about the general environment?</h2>
         		
-                <label><input name="general" type="radio" class="radio" required> Very concerned </label><br>
-                <label><input name="general" type="radio" class="radio"> Slightly concerned </label><br>
-                <label><input name="general" type="radio" class="radio"> Not sure </label><br>
-                <label><input name="general" type="radio" class="radio"> Not very concerned </label><br>
-                <label><input name="general" type="radio" class="radio"> Not concerned at all</label><br>
+                <label><input name="general" type="radio" class="radio" value="very concerned" required> Very concerned </label><br>
+                <label><input name="general" type="radio" class="radio" value="slightly"> Slightly concerned </label><br>
+                <label><input name="general" type="radio" class="radio" value="not sure"> Not sure </label><br>
+                <label><input name="general" type="radio" class="radio" value="not very"> Not very concerned </label><br>
+                <label><input name="general" type="radio" class="radio" value="not"> Not concerned at all</label><br>
         </div>    
         
         <div id ="container2" class="container">
      		<h2> How well do you think the UK government is implementing and handling environmental policies? </h2>
             	
-                <label><input name="policy" type="radio" class="radio" required> Great </label><br>
-                <label><input name="policy" type="radio" class="radio">  Good </label><br>
-                <label><input name="policy" type="radio" class="radio"> Not sure/OK </label><br>
-                <label><input name="policy" type="radio" class="radio"> Not good </label><br>
-                <label><input name="policy" type="radio" class="radio"> Horrible <label><br>
+                <label><input name="policy" type="radio" class="radio" value="great" required> Great </label><br>
+                <label><input name="policy" type="radio" class="radio" value="good">  Good </label><br>
+                <label><input name="policy" type="radio" class="radio" value="ok"> Not sure/OK </label><br>
+                <label><input name="policy" type="radio" class="radio" value="notg"> Not good </label><br>
+                <label><input name="policy" type="radio" class="radio" value="horrible"> Horrible <label><br>
         </div>       
         
         <div id ="container3" class="container">
             <h2> What area(s) of environmental issues do you think the U.K. government handles poorly?</h2>
                 
-                <label><input name="badissue" type="checkbox" class="checkbox"> Air pollution </label><br>
-                <label><input name="badissue" type="checkbox" class="checkbox"> Water pollution </label><br>
-                <label><input name="badissue" type="checkbox" class="checkbox"> Waste management </label><br>
-                <label><input name="badissue" type="checkbox" class="checkbox"> Recycling and re-use </label><br>
-                <label><input name="badissue" type="checkbox" class="checkbox"> Ground pollution <label><br>
-                <label><input name="badissue" type="checkbox" class="checkbox"> Ground/soil contamination </label><br>
-                <label><input name="badissue" type="checkbox" class="checkbox"> Deforestation </label><br>
-                <label><input name="badissue" type="checkbox" class="checkbox"> Radioactive waste </label><br>
-                <label><input name="badissue" type="checkbox" class="checkbox"> Habitat and wildlife protection <label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox" value="air"> Air pollution </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox" value="water"> Water pollution </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox" value="waste"> Waste management </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox" value="recycle"> Recycling and re-use </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox" value="ground"> Ground pollution <label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox" value="defor"> Deforestation </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox" Value="radioactive"> Radioactive waste </label><br>
+                <label><input name="badissue" type="checkbox" class="checkbox" value="habitat"> Habitat and wildlife protection <label><br>
         </div>        
             
         <div id ="container4" class="container">
             <h2> What area(s) of environmental issues do you think the U.K. government handles well?</h2>
                 
-                <label><input name="goodissue" type="checkbox" class="checkbox"> Air pollution </label><br>
-                <label><input name="goodissue" type="checkbox" class="checkbox"> Water pollution </label><br>
-                <label><input name="goodissue" type="checkbox" class="checkbox"> Waste management </label><br>
-                <label><input name="goodissue" type="checkbox" class="checkbox"> Recycling and re-use </label><br>
-                <label><input name="goodissue" type="checkbox" class="checkbox"> Ground pollution <label><br>
-                <label><input name="goodissue" type="checkbox" class="checkbox"> Ground/soil contamination </label><br>
-                <label><input name="goodissue" type="checkbox" class="checkbox"> Deforestation </label><br>
-                <label><input name="goodissue" type="checkbox" class="checkbox"> Radioactive waste </label><br>
-                <label><input name="goodissue" type="checkbox" class="checkbox"> Habitat and wildlife protection <label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox" value="gair"> Air pollution </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox" value="gwater"> Water pollution </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox" value="gwaste"> Waste management </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox" value="grecycle"> Recycling and re-use </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox" value="gground"> Ground pollution <label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox" value="gdefor"> Deforestation </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox" value="gradioactive"> Radioactive waste </label><br>
+                <label><input name="goodissue" type="checkbox" class="checkbox" value="ghabitat"> Habitat and wildlife protection <label><br>
         </div> 
 
         <div id ="container5" class="container">
             <h2> What income bracket are you?</h2>
                 <label for="dropdown"> Please select a value: </label><br>
                 <br>
-                <select name="income" id="dropdown" required placeholder:"Please choose">
+                <select name="income" id="dropdown" required>
+                        <option value="Please select" disabled selected>Select an option</option>
                         <option value="250k+"> £250K+ </option>
                         <option value="100k-250k"> £100k-£250k</option>
                         <option value="75k-100k"> £75k-£100k</option>
@@ -162,24 +161,24 @@ h2 {
         
         <div id ="container6" class="container">
             <h2> How likely is it that you would alter your lifestyle in order to decrease your environmental footprint, even if it results in a non trivial increase in expenses? </h2> 
-                    <label><input name="lifestyle" type="radio" class="radio" required> Very likely </label><br>
-                    <label><input name="lifestyle" type="radio" class="radio">  Likely </label><br>
-                    <label><input name="lifestyle" type="radio" class="radio"> Not sure </label><br>
-                    <label><input name="lifestyle" type="radio" class="radio"> Not likely </label><br>
-                    <label><input name="lifestyle" type="radio" class="radio"> Not at all</label><br>
+                    <label><input name="lifestyle" type="radio" class="radio" value="vlikely" required> Very likely </label><br>
+                    <label><input name="lifestyle" type="radio" class="radio" value="likely">  Likely </label><br>
+                    <label><input name="lifestyle" type="radio" class="radio" value="notsure"> Not sure </label><br>
+                    <label><input name="lifestyle" type="radio" class="radio" value="nlikely"> Not likely </label><br>
+                    <label><input name="lifestyle" type="radio" class="radio" value="notatall"> Not at all</label><br>
         </div>            
 
         <div id ="container7" class="container">
             <h2> How much do you think that the U.K. government should increase their budget for environmental issues , even if it results in a non trivial increase in your personal expenses? </h2>
-                <label><input name="govbudget" type="radio" class="radio" required> By a large amount </label><br>
-                <label><input name="govbudget" type="radio" class="radio"> By a small amount </label><br>
-                <label><input name="govbudget" type="radio" class="radio"> Not sure/no change </label><br>
-                <label><input name="govbudget" type="radio" class="radio"> Decrease by a small amount </label><br>
-                <label><input name="govbudget" type="radio" class="radio"> Decrease by a lot</label><br>
+                <label><input name="govbudget" type="radio" class="radio" value="largeincrease" required> By a large amount </label><br>
+                <label><input name="govbudget" type="radio" class="radio" value="smallincrease"> By a small amount </label><br>
+                <label><input name="govbudget" type="radio" class="radio" value="nochange"> Not sure/no change </label><br>
+                <label><input name="govbudget" type="radio" class="radio" value="smalldecrease"> Decrease by a small amount </label><br>
+                <label><input name="govbudget" type="radio" class="radio" value="largedecrease"> Decrease by a lot</label><br>
         </div>
 
         <div id ="container8" class="container">
-            <h2> Please leave a short comment about any other concerns you would like to raise regarding the approach of the British people and their governments' approach to environmental issues</h2>
+            <h2> Please leave a short comment about any other concerns you would like to raise regarding the approach of the British people and the government's approach to environmental issues</h2>
                 <label for="textarea"> Write your comment here:</label><br>
                 <br>
                 <textarea id="textarea" name="textarea" maxlength="300" ></textarea><br>
