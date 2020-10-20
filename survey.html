@@ -2,56 +2,103 @@
 
 <style>
 
-            
-#contents { background-image: linear-gradient( #69CD84, #69CDB6); }
+* {
+    padding:0;
+    margin:0;
+}
 
-h1 {background-color: #42C065;
-	font-family: monospace;
+h1 {
+	font-family: impact;
     font-size: 40px; }
 
 #description {
-	border: 2px solid cyan;
-    background-color: #CDB669;
-    font-family: monospace;
+    font-family: courier;
+    margin: 5px;
 } 
+
 #textarea {
-    width: 550px;
-    padding: 20px;
+    width: 80%;
+    padding: 8px;
 
 }
+
+html{
+    background-size:cover;
+    background-image:url(backgroundimg.jpg);
+    background-repeat: no-repeat;
+}
+
+#top {
+    background-color: #DF5320;
+    text-align:center;
+    overflow: hidden;
+    padding: 10px;
+}
+
+body {
+   margin:40px auto;
+   max-width: 50%;
+   background-image: linear-gradient( #ACDF20, #DFB320);
+   opacity: 0.95;
+   border:#DF5320 solid; 
+   box-shadow: 0 5px 25px black; 
+   min-width: 480px;
+}
+
 
 h2 {
-    padding:;
+    text-align:left;
+    margin: 15px 0px;
 }
 
 
+.container {
+    margin: 20px;
+    font-family: courier;
+    font-size: 0.75rem;
+}
+
+.detailinputs {
+    margin: 10px 0px 10px 0px;
+}
 </style>
 
-
 <html>
+
     <head><meta charset="UTF-8"></head>
+
 	<body>
+
     <!-- Title and Description -->
-    
+        <div id="top">
     	<h1 id="Title"> Environmental Awareness Survey </h1>
         	<p id="description"> A short survey to asses the level of concern for the environment by citizens of London in 2020 during the Covid-19 pandemic.</p>
-            
+        </div>
            
     <!-- Details form -->
-    <form>
-        <hr><div id="contents">
-       	<h2> Details</h2>
+
+    <form id="survey-form" action:"" method:"">
+    <div id="contents">
         
-        <div class="container1">
-        	
-            <label>Name: <input id="name" autocomplete="name" placeholder="Enter your name" required></label><br>
-        	<label>Email: <input id="email" type="email" placeholder="Enter your email" required> </label><br>
-        	<label>Phone number: <input id="number" type="tel" autocomplete="tel" placeholder="Enter your telephone number" required minlength="11" maxlength="11"></label>
-        	
+        <div id ="container0" class="container">
+       	<h2> Details</h2>
+
+            <div class="detailinputs">
+                <label id="name-label">Name:<br> <input id="name" autocomplete="name" placeholder="Enter your name" required></label><br>
+            </div>
+
+        	<div class="detailinputs">
+                <label id="email-label">Email:<br> <input id="email" type="email" placeholder="Enter your email" required> </label><br>
+            </div>
+
+            <div class="detailinputs">
+        	    <label id="number-label">Phone number:<br> <input id="number" type="number" autocomplete="tel" placeholder="Enter your telephone number" required minlength="11" maxlength="11"></label>
+        	</div>
         </div>
         
-   	<!-- Questions + inputs-->
-        
+   	<!-- Questions + inputs -->
+       <div id ="container1" class="container">
+
         	<h2> How concerned are you about the general environment?</h2>
         		
                 <label><input name="general" type="radio" class="radio" required> Very concerned </label><br>
@@ -59,9 +106,9 @@ h2 {
                 <label><input name="general" type="radio" class="radio"> Not sure </label><br>
                 <label><input name="general" type="radio" class="radio"> Not very concerned </label><br>
                 <label><input name="general" type="radio" class="radio"> Not concerned at all</label><br>
-                
+        </div>    
         
-     
+        <div id ="container2" class="container">
      		<h2> How well do you think the UK government is implementing and handling environmental policies? </h2>
             	
                 <label><input name="policy" type="radio" class="radio" required> Great </label><br>
@@ -69,8 +116,9 @@ h2 {
                 <label><input name="policy" type="radio" class="radio"> Not sure/OK </label><br>
                 <label><input name="policy" type="radio" class="radio"> Not good </label><br>
                 <label><input name="policy" type="radio" class="radio"> Horrible <label><br>
-               
-                
+        </div>       
+        
+        <div id ="container3" class="container">
             <h2> What area(s) of environmental issues do you think the U.K. government handles poorly?</h2>
                 
                 <label><input name="badissue" type="checkbox" class="checkbox"> Air pollution </label><br>
@@ -82,8 +130,9 @@ h2 {
                 <label><input name="badissue" type="checkbox" class="checkbox"> Deforestation </label><br>
                 <label><input name="badissue" type="checkbox" class="checkbox"> Radioactive waste </label><br>
                 <label><input name="badissue" type="checkbox" class="checkbox"> Habitat and wildlife protection <label><br>
-                
+        </div>        
             
+        <div id ="container4" class="container">
             <h2> What area(s) of environmental issues do you think the U.K. government handles well?</h2>
                 
                 <label><input name="goodissue" type="checkbox" class="checkbox"> Air pollution </label><br>
@@ -95,11 +144,13 @@ h2 {
                 <label><input name="goodissue" type="checkbox" class="checkbox"> Deforestation </label><br>
                 <label><input name="goodissue" type="checkbox" class="checkbox"> Radioactive waste </label><br>
                 <label><input name="goodissue" type="checkbox" class="checkbox"> Habitat and wildlife protection <label><br>
-                
+        </div> 
 
+        <div id ="container5" class="container">
             <h2> What income bracket are you?</h2>
-                <label for="dropdown"> Please select a value: </label>
-                <select name="income" id="dropdown" required>
+                <label for="dropdown"> Please select a value: </label><br>
+                <br>
+                <select name="income" id="dropdown" required placeholder:"Please choose">
                         <option value="250k+"> £250K+ </option>
                         <option value="100k-250k"> £100k-£250k</option>
                         <option value="75k-100k"> £75k-£100k</option>
@@ -107,26 +158,36 @@ h2 {
                         <option value="25k-50k"> £25k-£50k</option>
                         <option value="0-25k"> 0-£25k</option><br>
                </select>
-                        
+        </div>     
+        
+        <div id ="container6" class="container">
             <h2> How likely is it that you would alter your lifestyle in order to decrease your environmental footprint, even if it results in a non trivial increase in expenses? </h2> 
                     <label><input name="lifestyle" type="radio" class="radio" required> Very likely </label><br>
                     <label><input name="lifestyle" type="radio" class="radio">  Likely </label><br>
                     <label><input name="lifestyle" type="radio" class="radio"> Not sure </label><br>
                     <label><input name="lifestyle" type="radio" class="radio"> Not likely </label><br>
                     <label><input name="lifestyle" type="radio" class="radio"> Not at all</label><br>
-                    
+        </div>            
 
+        <div id ="container7" class="container">
             <h2> How much do you think that the U.K. government should increase their budget for environmental issues , even if it results in a non trivial increase in your personal expenses? </h2>
                 <label><input name="govbudget" type="radio" class="radio" required> By a large amount </label><br>
                 <label><input name="govbudget" type="radio" class="radio"> By a small amount </label><br>
                 <label><input name="govbudget" type="radio" class="radio"> Not sure/no change </label><br>
                 <label><input name="govbudget" type="radio" class="radio"> Decrease by a small amount </label><br>
                 <label><input name="govbudget" type="radio" class="radio"> Decrease by a lot</label><br>
+        </div>
+
+        <div id ="container8" class="container">
             <h2> Please leave a short comment about any other concerns you would like to raise regarding the approach of the British people and their governments' approach to environmental issues</h2>
-                <label for="textarea"> Please write here:</label>
+                <label for="textarea"> Write your comment here:</label><br>
+                <br>
                 <textarea id="textarea" name="textarea" maxlength="300" ></textarea><br>
-        <input name="all" type="submit" class="submit">
-        
+        </div>
+
+        <div id ="container9" class="container">
+        <button name="all data" id="submitbutton">Submit All</button>
+        </div>
     </form>            
                 
 
@@ -134,7 +195,7 @@ h2 {
 
 
 
-    <div>
+    </div>
     </body>
 
-<html>
+</html>
